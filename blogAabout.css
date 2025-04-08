@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: lime;
+}
+
+.pengenalan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 5px #00ff00;
+    font-size: 24px;
+    line-height: 1.4;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.pengenalan {
+    text-shadow: 0 0 5px #00ff00;
+    font-size: 32px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.pengenalan-text {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.link-instagram {
+    text-align: center;
+    font-size: 24px;
+    text-shadow: 0 0 5px #00ff00;
+    margin: 40px 0 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #00ff00;
+    border-top: 1px solid #00ff00;
+    margin-top: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #00ff00;
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #00ff00;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar .nav-links a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 10px #00ff00;
+}
+
+.glitch {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+.glitch::before {
+    color: #ff0000;
+    transform: translate(-2px, -2px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    animation: glitch 0.5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    color: #0000ff;
+    transform: translate(2px, 2px);
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+    animation: glitch 0.5s infinite linear alternate;
+}
+
+@keyframes glitch {
+    0% { transform: translate(2px, -2px); }
+    100% { transform: translate(-2px, 2px); }
+}

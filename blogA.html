@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="blogA.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Hendra dan Vino tentang Hacker</title>
+<body>
+    <nav class="navbar">
+            <div class="logo glitch" data-text="HACKER">HACKER</div>
+            <ul class="nav-links">
+                <li><a href="blogA.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+    </nav>
+    <div class="pengenalan-container">
+        <h1 class="pengenalan" data-text="Blog Hacker by Hot3l dan Vynzz">
+            Blog Hacker by Hot3l dan Vynzz
+        </h1>
+        <p class="pengenalan-text">
+            Peretas adalah pakar komputer yang menggunakan keterampilan pemrograman tingkat lanjut untuk menetralkan protokol keamanan dan memperoleh akses ke perangkat atau jaringan.
+        </p>
+    </div>
+    <h1 class="font-pertama">Jenis-Jenis Hacker</h1>  
+    <div class="wrapper">
+        <a href="black-hat-hacker.html" class="container">
+            <img src="balck.png" alt="Black Hat Hacker">
+            <p>Black Hat Hacker</p>
+        </a>
+        <a href="white-hat-hacker.html" class="container">
+            <img src="white.png" alt="White Hat Hacker">
+            <p>White Hat Hacker</p>
+        </a>
+        <a href="gray-hat-hacker.html" class="container">
+            <img src="Grey.png" alt="Gray Hat Hacker">
+            <p>Gray Hat Hacker</p>
+        </a>
+    </div>
+    <div>
+        <h1 class="Teknik">Teknik Teknik yang di gunakan Hacker</h1>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <a href="phising.html"><img src="phising.png" alt="Slide 1"></a>
+                <div class="caption">Phishing</div>
+            </div>
+            <div class="slide">
+                <a href="keylogger.html"><img src="keylogger.png" alt="Slide 2"></a>
+                <div class="caption">Keylogger</div>
+            </div>
+            <div class="slide">
+                <a href="SQL enjaction.html"><img src="SQL enjaction.png" alt="Slide 3"></a>
+                <div class="caption">SQL Injection</div>
+            </div>
+            <div class="slide">
+                <a href="malware.html"><img src="malware.png" alt="Slide 4"></a>
+                <div class="caption">Malware</div>
+            </div>
+            <div class="slide">
+                <a href="MitM.html"><img src="MitM.png" alt="Slide 5"></a>
+                <div class="caption">MitM</div>
+            </div>
+            <div class="slide">
+                <a href="brote force.html"><img src="brute force.jpg" alt="Slide 6"></a>
+                <div class="caption">Brute Force</div>
+            </div>
+            <div class="slide">
+                <a href="ramsomware.html"><img src="ramsomware.svg" alt="Slide 7"></a>
+                <div class="caption">Ransomware</div>
+            </div>
+            <div class="slide">
+                <a href="backdoor.html"><img src="backdoor.svg" alt="Slide 8"></a>
+                <div class="caption">Backdoor</div>
+            </div>
+            <div class="slide">
+                <a href="RFID AND NFC hacking.html"><img src="RFID AND NFC hacking.svg" alt="Slide 9"></a>
+                <div class="caption">RFID dan NFC</div>
+            </div>
+            <div class="slide">
+                <a href="social engineering.html"><img src="social engineering.svg" alt="Slide 10"></a>
+                <div class="caption">Social Engineering</div>
+            </div>
+            <div class="slide">
+                <a href="DDos.html"><img src="DDos.svg" alt="Slide 11"></a>
+                <div class="caption">DDos</div>
+            </div>
+            <div class="slide">
+                <a href="zero day.html"><img src="zero day.svg" alt="Slide 12"></a>
+                <div class="caption">Zero-Day</Zero-Day></div>
+            </div>
+            <div class="slide">
+                <a href="deep fake.html"><img src="deep fake.svg" alt="Slide 13"></a>
+                <div class="caption">Deep Fake</div>
+            </div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    <footer style="text-align:center; padding: 20px; color: #00ff00; font-size: 14px;">
+        &copy; 2025 Blog Hacker by Hot3l dan Vynzz. All rights reserved.
+    </footer>
+
+</body>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    
+    document.querySelector('.next').onclick = () => {
+      goToSlide(currentSlide + 1);
+    };
+    
+    document.querySelector('.prev').onclick = () => {
+      goToSlide(currentSlide - 1);
+    };
+    
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (index + totalSlides) % totalSlides;
+      slides[currentSlide].classList.add('active');
+    }
+    
+    // Otomatis berganti tiap 5 detik
+    setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+    </script>
+</html>
